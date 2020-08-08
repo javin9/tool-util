@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        // "shippedproposals": true,
+        // "corejs": {
+        //   "version": 3, //新版本需要指定核⼼心库版本 useBuiltIns: "usage" //按需注⼊入
+        //   "proposals": true
+        // },
+        "corejs": 3,
+        "useBuiltIns": "usage" //按需注⼊入
+      }
+    ]
+  ],
+  "plugins": [
+    // "@babel/plugin-external-helpers"
+  ]
+}

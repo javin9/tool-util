@@ -1,0 +1,103 @@
+// Color defination.
+@cmn-color_baidu-red: #E10602;
+@cmn-color_baidu-blue: #2932E1;
+
+@cmn-color_zuoye-pink: #FD7B46;
+@cmn-color_zuoye-blue: #45B7FF;
+@cmn-color_zuoye-lightblue: #84CFFF;
+@cmn-color_zuoye-orange: #FB7F2D;
+@cmn-color_zuoye-yellow: #FFB923;
+@cmn-color_zuoye-soil: #CAA066;
+@cmn-color_zuoye-green: #3AA96E;
+
+@cmn-color_link: #2D64B3;
+@cmn-color_font: #333;
+@cmn-color_font-darkgray: #666;
+@cmn-color_font-lightgray: #999;
+
+@cmn-color_zuoye-yike: #61CA74;
+
+// Width defination.
+@cmn-width_m-small-page: 6rem;
+@cmn-width_m-large-page: 6.6rem;
+@cmn-width_small-page: 980px;
+@cmn-width_large-page: 1180px;
+
+// Component's z-index defination.
+@cmn-z-index_nav: 1000;
+@cmn-z-index_overlay: 2000;
+
+// Yike standard color.
+@cmn-color_yike-green: #5DCC6F;
+@cmn-color_yike-orange: #FB7F2D;
+@cmn-color_yike-gray-font: #D2D2D2;
+@cmn-color_yike-background: #F2F2F2;
+@cmn-color_yike-light-background: #F8F8F8;
+@cmn-color_yike-gray-border: #E5E5E5;
+// parent theme color
+@cmn-color_parent-yellow:#FED045;
+
+.border-top-1px(@color:#f2f4f5) {
+  position:relative;
+  &:before{
+      display: block;
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      border-top: 1px solid @color;
+      content: "";
+  }
+}
+//利用scale缩放完善1px
+@media (-webkit-min-device-ratio:2),(min-device-ratio:2) {
+  // @pp:&::
+  .border-top-1px{
+      &:before{
+          -webkit-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+      }
+  }
+}
+@media (-webkit-min-device-ratio:3),(min-device-ratio:3){
+  .border-top-1px{
+      &:before{
+          -webkit-transform: scaleY(0.333);
+          transform: scaleY(0.333);
+      }
+  }
+}
+
+.border-bottom-1px(@color:#f2f4f5) {
+  position:relative;
+  &:after{
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      border-top: 1px solid @color;
+      content: "";
+  }
+}
+//利用scale缩放完善1px
+@media (-webkit-min-device-ratio:2),(min-device-ratio:2) {
+  // @pp:&::
+  .border-bottom-1px{
+      &:after{
+          -webkit-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+      }
+  }
+}
+@media (-webkit-min-device-ratio:3),(min-device-ratio:3){
+  .border-bottom-1px{
+      &:after{
+          -webkit-transform: scaleY(0.333);
+          transform: scaleY(0.333);
+      }
+  }
+}
+
+
+

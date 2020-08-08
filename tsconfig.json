@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@tool/core": [
+        "packages/tool-core/src/index.ts"
+      ],
+      "@tool/core/lib/*": [
+        "packages/tool-core/src/*"
+      ]
+    }
+  }
+}

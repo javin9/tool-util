@@ -1,0 +1,22 @@
+{
+  "name": "@tool/style",
+  "version": "1.0.1-alpha.10",
+  "description": "> TODO: description",
+  "author": "liujianwei <liujianwei@zuoyebang.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/style/yiketoolfonts.css",
+  "scripts": {
+    "test": "echo \"style  jest\"  ",
+    "build": "echo \"style  build\"  ",
+    "clean": "echo \"clean\"  ",
+    "lint": "echo \"lint\" "
+  },
+  "directories": {
+    "lib": "dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "gitHead": "bd1c224be899246a168b7fa39f43a8eafd583c35"
+}
